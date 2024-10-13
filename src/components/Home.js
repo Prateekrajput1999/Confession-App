@@ -72,6 +72,7 @@ const Home = () => {
                   id="title"
                   type="text"
                   value={title}
+                  maxLength={50}
                   onChange={(e) => setTitle(e.target.value)}
                   placeholder="Enter a title for your confession"
                   required

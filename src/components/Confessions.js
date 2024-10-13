@@ -82,9 +82,9 @@ const Confessions = ({ confessions, highlighedID, setConfessions }) => {
                 : ""
             } bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-gray-700`}
           >
-            <div className="flex justify-between bg-gray-700 p-4 border-b border-gray-600">
-              <h2 className="text-xl font-semibold text-white">{conf.title}</h2>
-              <span className="text-gray-400">{timeAgo(conf?.timestamp)}</span>
+            <div className="relative flex justify-between bg-gray-700 p-4 border-b border-gray-600">
+              <h2 className="font-semibold truncate max-w-[80%] sm:max-w-[90%] text-white text-base sm:text-xl">{conf?.title}</h2>
+              <span className="text-gray-400 right-2 absolute text-sm sm:text-base">{timeAgo(conf?.timestamp)}</span>
             </div>
             <div className="p-4">
               <p className="text-gray-300">{conf.confession}</p>
